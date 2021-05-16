@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart Class</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style type="text/css">
+		.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.mySlides {display:none;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+}
+.t1{
+	font-size: 25px;
+}
+p{
+	font-size: 20px;
+}
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: green;
+   color: white;
+   text-align: center;
+}
+
+	</style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+   <div class="dropdown">
+    <button class="dropbtn" >Campus
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+  <a href="events.html">Events</a>
+  <a href="Activity.html">Activity</a>
+</div>
+</div>
+ <div class="dropdown">
+    <button class="dropbtn"class="active">Resources
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+  <a href="library.html">Library</a>
+  <a href="smartclass.html">SmartClass</a>
+</div>
+</div>
+  <a href="cont.html">Contact</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">About
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+  <a href="About.html">About US</a>
+  <a href="intake.html">Intake</a>
+</div>
+</div>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<h2>Enroll:190023107008</h2>
+<h2>Name:Shah Priyanshu</h2>
+<center>
+<h1>Smart Class</h1>
+</center>
+<center>
+<div class="w3-content w3-section">
+  <img class="mySlides" src="sm1.jpg" style="width: 100%;" height="500" width="700">
+  <img class="mySlides" src="sm2.jpg"style="width: 100%;" height="500" width="700">
+  <img class="mySlides" src="sm3.jpg" style="width: 100%;"height="500" width="700">
+  <img class="mySlides" src="sm4.jpg" style="width: 100%;"height="500" width="700">
+</div>
+</center>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+<p class="t1"><b>Smart Learning</b>
+<p>Smart Class is an advanced technology implementation for AIT College. It gives tools and other contents for students learning using the latest media presentations. Smart Class is available for teachers and students on the web. It can also be installed on the local server for faster access.</p>
+<footer>
+<div class="footer">
+  <h4>Prepared By: Shah Priyanshu</h4>
+  <h4>Copyright @2021 All rights Reserved by Ahmedabad Institute of Technology</h4>
+   
+<div style="text-align:center;"><script type="text/javascript" src="http://services.webestools.com/cpt_visitors/69872-7-5.js"></script></div><a href="http://www.webestools.com/" style="display:block;text-align:center;"></a>
+</footer>
+</body>
+</html>

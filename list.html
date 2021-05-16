@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List Types</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+	.center{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+</style>
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+  <a href="index.html" >Home</a>
+  <a href="http://www.aitindia.in/aitnew/campus_event">Events</a>
+  <a href=cont.html">Contact</a>
+   <div class="dropdown">
+    <button class="dropbtn" class="active">Class-Work 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="emp.html">Employee Details</a>
+      <a href="list.html">List Types</a>
+      <a href="ind map.html">India Map</a>
+      <a href="bulb.html">Bulb On & Off</a>
+      <a href="registration.html">Registration</a>
+      <a href="dice.html">Dice Game</a>
+      <a href="keycode.html">KeyCode</a>
+      <a href="keypress.html">KeyPress</a>
+      <a href="psuedo.html">Psuedo</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Practicals 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="flight.html">Online Ticket Booking</a>
+      <a href="news.html">News Site</a>
+      <a href="tbs.html">Bootstrap table</a>
+      <a href="btn.html">Bootstrap Button</a>
+      <a href="blist.html">Bootstrap List</a>
+       <a href="font.html">Font</a>
+      <a href="fibo.html">Fibonacci Series</a>
+      <a href="oddeven.html">OddEven</a>
+    </div>
+  </div>
+   <div class="dropdown">
+    <button class="dropbtn">About
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+  <a href="About.html">About US</a>
+</div>
+</div>
+<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<h4>Name:Shah Priyanshu</h4>
+<h4>Enroll:190023107008</h4>
+
+<table class="center" style="height: 699px; border-style: solid;" border="5">
+<tbody>
+<tr style="height: 31px;">
+<td colspan="4" style="width: 606px; height: 31px; text-align: center;">
+<p><strong>Ordered List</strong></p>
+</td>
+</tr>
+<tr style="height: 31px;">
+<td style="width: 184px; height: 31px; text-align: center;">
+<p><strong>Country</strong></p>
+</td>
+<td colspan="2" style="width: 238px; height: 31px; text-align: center;">
+<p><strong>State</strong></p>
+</td>
+<td style="width: 184px; height: 31px; text-align: center;">
+<p><strong>City</strong></p>
+</td>
+</tr>
+<tr style="height: 121px;">
+<td style="width: 184px; height: 121px;">
+<p>&nbsp; 1. India&nbsp;</p>
+<p>&nbsp; 2. America</p>
+<p>&nbsp; 3. Australia</p>
+<p>&nbsp; 4. New-Zeland</p>
+</td>
+<td colspan="2" style="width: 238px; height: 121px;">
+<p>&nbsp; i. Gujarat</p>
+<p>&nbsp; ii. Maharashtra</p>
+<p>&nbsp; iii. Goa</p>
+<p>&nbsp; iv. Rajasthan</p>
+</td>
+<td style="width: 184px; height: 121px;">
+<p>&nbsp; a. Ahmedabad</p>
+<p>&nbsp; b. Surat</p>
+<p>&nbsp; c. Gandhinagar</p>
+<p>&nbsp; d. Mumbai</p>
+</td>
+</tr>
+<tr style="height: 31px;">
+<td colspan="4" style="width: 606px; height: 31px; text-align: center;">
+<p><strong>Unordered List</strong></p>
+</td>
+</tr>
+<tr style="height: 31px;">
+<td style="width: 184px; height: 31px; text-align: center;">
+<p><strong>Vegetable</strong></p>
+</td>
+<td colspan="2" style="width: 238px; height: 31px; text-align: center;">
+<p><strong>Fruits</strong></p>
+</td>
+<td style="width: 184px; height: 31px; text-align: center;">
+<p><strong>Milk Items</strong></p>
+</td>
+</tr>
+<tr style="height: 121px;">
+<td style="width: 184px; height: 121px;">
+<ul>
+<li>Potato</li>
+<li>Tomato</li>
+<li>Cabbage</li>
+<li>Cauliflower</li>
+</ul>
+</td>
+<td colspan="2" style="width: 238px; height: 121px;">
+<ul style="list-style-type: circle;">
+<li>Apple</li>
+<li>Banana</li>
+<li>Kiwi</li>
+<li>Orange</li>
+</ul>
+</td>
+<td style="width: 184px; height: 121px;">
+<ul style="list-style-type: square;">
+<li>Tea</li>
+<li>Coffee</li>
+<li>Ice-Cream</li>
+<li>Paneer</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 31px;">
+<td colspan="4" style="width: 606px; height: 31px; text-align: center;">
+<p><strong>Nested List</strong></p>
+</td>
+</tr>
+<tr style="height: 31px;">
+<td colspan="2" style="width: 303px; height: 31px; text-align: center;">
+<p><strong>Cars</strong></p>
+</td>
+<td colspan="2" style="width: 303px; height: 31px; text-align: center;">
+<p><strong>Bikes</strong></p>
+</td>
+</tr>
+<tr style="height: 271px;">
+<td colspan="2" style="height: 271px; width: 303px;">
+<p><strong>1)&nbsp;&nbsp;&nbsp; </strong><strong>Honda</strong></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; a) City</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; b) Civic</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; c) Amaze</p>
+<p><strong>2)&nbsp;&nbsp;&nbsp; </strong><strong>Suzuki</strong></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; a) Swift</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; b) Ertiga</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; c) Ignis</p>
+<p><strong>&nbsp;</strong></p>
+</td>
+<td colspan="2" style="height: 271px; width: 303px;">
+<p><strong>1)&nbsp;&nbsp;&nbsp; </strong><strong>Yamaha</strong></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; a. Fz</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; b. Fascino</p>
+<p><strong>2)&nbsp;&nbsp;&nbsp; </strong><strong>TVS</strong></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; a. Apache</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; b. Gixxer</p>
+</td>
+</tr>
+<tr>
+<td style="width: 303px;" colspan="2">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="width: 303px;" colspan="2">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
